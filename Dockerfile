@@ -1,6 +1,6 @@
-FROM node:16
+FROM node:16-slim
 WORKDIR /app
 COPY . .
-RUN npm install -g serve
+RUN npm install
 EXPOSE 3000
-CMD [ "serve", "-s", "build"]
+CMD [ "npm", "start" ]
