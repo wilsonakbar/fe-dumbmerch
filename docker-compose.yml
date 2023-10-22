@@ -12,7 +12,11 @@ services:
       - POSTGRES_PASSWORD=wilson
       - POSTGRES_DB=db_dumbmerch
    frontend:
+<<<<<<< HEAD
     image: wilsonakbar/fe-dumbmerch-staging:latest
+=======
+    image: wilsonakbar/fe-dumbmerch-production:latest
+>>>>>>> f260a195699f300e27f4414bdf1e58ef150eba93
     container_name: fe-dumbmerch
     stdin_open: true
     restart: unless-stopped
@@ -21,7 +25,11 @@ services:
    backend:
     depends_on:
       - db
+<<<<<<< HEAD
     image: wilsonakbar/be-dumbmerch-staging:latest
+=======
+    image: wilsonakbar/be-dumbmerch-production:latest
+>>>>>>> f260a195699f300e27f4414bdf1e58ef150eba93
     container_name: be-dumbmerch
     stdin_open: true
     restart: unless-stopped
